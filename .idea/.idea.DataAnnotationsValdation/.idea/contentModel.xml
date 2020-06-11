@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Gzmo\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Gzmo\.Rider2019.3\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Gzmo\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Gzmo\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_DataAnnotationsValdation.-153724390.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Gzmo\RiderProjects\DataAnnotationsValdation" t="IncludeFlat">
+      <e p="DataAnnotationsValdation.sln" t="IncludeFlat" />
+      <e p="DataAnnotationsValidation" t="IncludeRecursive">
+        <e p="Attributes" t="Include">
+          <e p="AsciiAttribute.cs" t="Include" />
+          <e p="DateAttribute.cs" t="Include" />
+          <e p="DateTimeOffsetAttribute.cs" t="Include" />
+          <e p="DecimalRangeAttribute.cs" t="Include" />
+          <e p="EarlierThanAttribute.cs" t="Include" />
+          <e p="EmailAddressIf.cs" t="Include" />
+          <e p="EnumBoundaryAttribute.cs" t="Include" />
+          <e p="GuidAttribute.cs" t="Include" />
+          <e p="IncomeTaxNumberAtrribute.cs" t="Include" />
+          <e p="LaterThanAttribute.cs" t="Include" />
+          <e p="MinimumCollectionCountAttribute.cs" t="Include" />
+          <e p="MustValidateAttribute.cs" t="Include" />
+          <e p="MustValidateIfAttribute.cs" t="Include" />
+          <e p="RangeIfAttribute.cs" t="Include" />
+          <e p="RequiredAttributeBase.cs" t="Include" />
+          <e p="RequiredIfAttribute.cs" t="Include" />
+          <e p="RequiredIfSameAttribute.cs" t="Include" />
+          <e p="RequiresOneOfAttribute.cs" t="Include" />
+          <e p="SouthAfricanIdentityNumberAttribute.cs" t="Include" />
+          <e p="SouthAfricanIdentityNumberIfAttribute.cs" t="Include" />
+          <e p="SumMustEqualAttribute.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DataAnnotationsValidation.csproj" t="IncludeRecursive" />
+        <e p="DataAnnotationValidator.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="SouthAfricanIdentityNumberUtil.cs" t="Include" />
+        <e p="ValidationResult.cs" t="Include" />
+        <e p="ValidatorsMapperProfile.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

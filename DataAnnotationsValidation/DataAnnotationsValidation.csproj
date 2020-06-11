@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{2E15132D-E6BD-4E58-B0BC-7863C1977F99}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>DataAnnotationsValidation</RootNamespace>
+		<AssemblyName>DataAnnotationsValidation</AssemblyName>
+		<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="System.ComponentModel.DataAnnotations" />
+		<Reference Include="System.Core" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Runtime.Serialization" />
+		<Reference Include="System.Xml" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="Attributes\AsciiAttribute.cs" />
+		<Compile Include="Attributes\DateAttribute.cs" />
+		<Compile Include="Attributes\DateTimeOffsetAttribute.cs" />
+		<Compile Include="Attributes\DecimalRangeAttribute.cs" />
+		<Compile Include="Attributes\EarlierThanAttribute.cs" />
+		<Compile Include="Attributes\EmailAddressIf.cs" />
+		<Compile Include="Attributes\EnumBoundaryAttribute.cs" />
+		<Compile Include="Attributes\IncomeTaxNumberAtrribute.cs" />
+		<Compile Include="Attributes\LaterThanAttribute.cs" />
+		<Compile Include="Attributes\MinimumCollectionCountAttribute.cs" />
+		<Compile Include="Attributes\MustValidateAttribute.cs" />
+		<Compile Include="Attributes\MustValidateIfAttribute.cs" />
+		<Compile Include="Attributes\RangeIfAttribute.cs" />
+		<Compile Include="Attributes\RequiredAttributeBase.cs" />
+		<Compile Include="Attributes\RequiredIfAttribute.cs" />
+		<Compile Include="Attributes\RequiredIfSameAttribute.cs" />
+		<Compile Include="Attributes\RequiresOneOfAttribute.cs" />
+		<Compile Include="Attributes\SouthAfricanIdentityNumberAttribute.cs" />
+		<Compile Include="Attributes\SouthAfricanIdentityNumberIfAttribute.cs" />
+		<Compile Include="Attributes\SumMustEqualAttribute.cs" />
+		<Compile Include="Attributes\GuidAttribute.cs" />
+		<Compile Include="DataAnnotationValidator.cs" />
+		<Compile Include="Properties\AssemblyInfo.cs" />
+		<Compile Include="SouthAfricanIdentityNumberUtil.cs" />
+		<Compile Include="ValidationResult.cs" />
+		<Compile Include="ValidatorsMapperProfile.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="9.0.0" />
+	</ItemGroup>
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+	<!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+		 Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+
+</Project>
