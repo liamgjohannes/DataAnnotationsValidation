@@ -4,7 +4,6 @@ using System.Runtime.Serialization;
 
 namespace DataAnnotationsValidation
 {
-	[DataContract(Namespace = "http://www.10X.co.za/Services/2015/12")]
 	public class ValidationResult
 	{
 		public ValidationResult()
