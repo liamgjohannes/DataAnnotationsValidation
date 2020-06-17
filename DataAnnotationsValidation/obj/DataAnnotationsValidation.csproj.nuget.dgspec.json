@@ -31,14 +31,7 @@
         }
       },
       "frameworks": {
-        "net48": {
-          "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            }
-          }
-        }
+        "net48": {}
       },
       "runtimes": {
         "win": {

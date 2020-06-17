@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using AutoMapper;
 using DataAnnotationsValidation.Attributes;
 using DataAnnotations = System.ComponentModel.DataAnnotations;
 
@@ -16,16 +15,9 @@ namespace DataAnnotationsValidation
 	/// </summary>
 	public class DataAnnotationValidator : IValidator
 	{
-		private readonly IMapper _mapper;
 		private readonly Dictionary<Type, object> _services;
 
-		public DataAnnotationValidator(IMapper mapper)
-		{
-			_mapper = mapper;
-		}
-
-		public DataAnnotationValidator(IMapper mapper, IEnumerable<Tuple<Type, object>> services) 
-			: this(mapper)
+		public DataAnnotationValidator(IEnumerable<Tuple<Type, object>> services)
 		{
 			_services = services.ToDictionary(t => t.Item1, t => t.Item2);
 		}
@@ -67,7 +59,7 @@ namespace DataAnnotationsValidation
 
 			resultList.AddRange(mainResults.Select(vr =>
 			{
-				var result = _mapper.Map<ValidationResult>(vr);
+				var result = new ValidationResult(vr.ErrorMessage, vr.MemberNames);
 				result.MemberNames = result.MemberNames.Select(name => validationPath.Concat(new [] { name }).Aggregate((s1, s2) => s1 + " -> " + s2));
 				return result;
 			}));
@@ -96,7 +88,7 @@ namespace DataAnnotationsValidation
 				}
 
 				var childResults = ValidateRecursively(childObject, validationPath.Concat(new [] { mustBeValidatedProperty.Name }).ToArray());
-				resultList.AddRange(childResults.Select(_mapper.Map<ValidationResult>));
+				resultList.AddRange(childResults.Select(vr => new ValidationResult(vr.ErrorMessage, vr.MemberNames)));
 			}
 			
 			return resultList;

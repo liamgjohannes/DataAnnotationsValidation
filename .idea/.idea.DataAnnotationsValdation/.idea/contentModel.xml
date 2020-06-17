@@ -40,7 +40,6 @@
         </e>
         <e p="SouthAfricanIdentityNumberUtil.cs" t="Include" />
         <e p="ValidationResult.cs" t="Include" />
-        <e p="ValidatorsMapperProfile.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

@@ -1,86 +1,14 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.8": {
-      "AutoMapper/9.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/net461/AutoMapper.dll": {}
-        },
-        "runtime": {
-          "lib/net461/AutoMapper.dll": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.8/win": {
-      "AutoMapper/9.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/net461/AutoMapper.dll": {}
-        },
-        "runtime": {
-          "lib/net461/AutoMapper.dll": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.8/win-x64": {
-      "AutoMapper/9.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/net461/AutoMapper.dll": {}
-        },
-        "runtime": {
-          "lib/net461/AutoMapper.dll": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.8/win-x86": {
-      "AutoMapper/9.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/net461/AutoMapper.dll": {}
-        },
-        "runtime": {
-          "lib/net461/AutoMapper.dll": {}
-        }
-      }
-    }
+    ".NETFramework,Version=v4.8": {},
+    ".NETFramework,Version=v4.8/win": {},
+    ".NETFramework,Version=v4.8/win-x64": {},
+    ".NETFramework,Version=v4.8/win-x86": {}
   },
-  "libraries": {
-    "AutoMapper/9.0.0": {
-      "sha512": "xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
-      "type": "package",
-      "path": "automapper/9.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "automapper.9.0.0.nupkg.sha512",
-        "automapper.nuspec",
-        "lib/net461/AutoMapper.dll",
-        "lib/net461/AutoMapper.pdb",
-        "lib/net461/AutoMapper.xml",
-        "lib/netstandard2.0/AutoMapper.dll",
-        "lib/netstandard2.0/AutoMapper.pdb",
-        "lib/netstandard2.0/AutoMapper.xml"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.8": [
-      "AutoMapper >= 9.0.0"
-    ]
+    ".NETFramework,Version=v4.8": []
   },
   "packageFolders": {
     "C:\\Users\\Gzmo\\.nuget\\packages\\": {}
@@ -112,14 +40,7 @@
       }
     },
     "frameworks": {
-      "net48": {
-        "dependencies": {
-          "AutoMapper": {
-            "target": "Package",
-            "version": "[9.0.0, )"
-          }
-        }
-      }
+      "net48": {}
     },
     "runtimes": {
       "win": {
